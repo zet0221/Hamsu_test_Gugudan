@@ -3,8 +3,8 @@ public class Gugudan {
 	// 구구단 함수
 	public static int[] calculate(int num)
 	{
-		int[] result = new int[9];
-		for(int i=0;i<result.length;i++)
+		int[] result = new int[num];
+		for(int i=0;i<num;i++)
 		{
 			result[i] = num*(i+1);
 		}
