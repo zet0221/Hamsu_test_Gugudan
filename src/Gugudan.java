@@ -1,8 +1,6 @@
-import java.util.Scanner;
-
-import javax.sql.rowset.CachedRowSet;
 
 public class Gugudan {
+	// 구구단 함수
 	public static int[] calculate(int num)
 	{
 		int[] result = new int[9];
@@ -12,7 +10,7 @@ public class Gugudan {
 		}
 		return result;
 	}
-	
+	// 배열 화면 출력 함수
 	public static void print(int[] result)
 	{
 		for(int i=0;i<result.length;i++)
@@ -20,12 +18,12 @@ public class Gugudan {
 			System.out.println(result[i]);
 		}
 	}
-	
+	//메인 함수
 	public static void main(String[] args) {
 		for(int i=2;i<10;i++)
 		{
-			int[] result = calculate(i);
-			print(result);
+			int[] result = calculate(i); // 구구단 함수 호출
+			print(result); // 배열 함수 화면출력 호출
 		}
 	}
 }
